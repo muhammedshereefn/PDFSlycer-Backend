@@ -76,7 +76,7 @@ To allow requests from your front-end application, ensure that CORS is correctly
 
 You can access the live version of the PDFSlycer backend here:
 
-[PDFSlycer Backend Live](https://pdfslycer-backend.onrender.com/)
+[PDFSlycer Backend Live](https://pdfslycer-frontend.onrender.com/)
 
 ## License
 
