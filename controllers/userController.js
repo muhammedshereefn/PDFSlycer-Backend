@@ -6,13 +6,9 @@ require('dotenv').config()
 
 let JWT_SECRET = process.env.JWT_SECRET
 
-exports.signup = async (req, res ,next) => {
-
-    
+//userSignup API
+exports.signup = async (req, res ,next) => {    
     const {name,email,password} = req.body;
-
-    
-
     try {
         let user = await User.findOne({email});
         if(user) return res.status(400).json({message:"User already exist"})
@@ -40,7 +36,7 @@ exports.signup = async (req, res ,next) => {
 }
 
 
-
+//userSignIn API
 exports.signIn = async (req, res, next) => {
     const { email, password } = req.body;
   
